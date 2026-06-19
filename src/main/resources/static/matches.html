@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match - FootyBox</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="icon" type="image/png" href="/assets/img/footybox-logo.png">
+</head>
+<body data-nav="archive">
+  <main class="wrap page">
+    <p class="notice hidden" data-page-message aria-live="polite"></p>
+    <input data-detail-spoiler-free type="checkbox" hidden>
+    <section data-match-detail>
+      <div class="card card-pad"><span class="muted">Loading match...</span></div>
+    </section>
+
+    <div class="detail-layout">
+      <div>
+        <div class="card card-pad reveal in" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:24px;">
+          <div><div class="muted" style="font-size:12px;">Your rating</div><span class="rate-input" data-value="0" style="margin-top:4px;"></span></div>
+          <div class="divider" style="width:1px;height:42px;margin:0 4px;"></div>
+          <button class="btn btn-primary" type="button" data-open-log data-icon="plus">Log / Review</button>
+          <button class="btn btn-ghost" type="button" data-favorite data-icon="bookmark">Favourite</button>
+          <span class="muted" style="margin-left:auto;font-size:12.5px;">Saved through your real FootyBox account</span>
+        </div>
+
+        <div class="tabs reveal in" data-group="match">
+          <button class="active" data-tab="reviews">Reviews</button>
+          <button data-tab="thread">Match thread</button>
+        </div>
+
+        <div class="tab-panel active" data-group="match" data-tab="reviews">
+          <div data-review-list style="display:flex;flex-direction:column;gap:16px;"></div>
+        </div>
+        <div class="tab-panel" data-group="match" data-tab="thread">
+          <div class="card card-pad"><h3>Match discussion</h3><p class="muted">Reviews and comments from FootyBox users appear here.</p></div>
+        </div>
+      </div>
+
+      <aside class="side">
+        <section class="card widget reveal in" data-community-rating><h3>Community rating</h3><p class="muted">Loading ratings...</p></section>
+        <section class="card widget reveal in" data-diary-state><h3>Your diary</h3><p class="muted">Loading diary state...</p></section>
+        <section class="card widget reveal" data-favourite-state><h3 data-icon="bookmark">Favourite</h3><p class="muted">Use the action above to save this match.</p></section>
+      </aside>
+    </div>
+  </main>
+
+  <dialog class="log-dialog" data-log-dialog>
+    <form class="compose-card" data-log-form method="dialog">
+      <input type="hidden" name="matchId">
+      <input type="hidden" name="rating">
+      <div class="row center" style="justify-content:space-between;">
+        <div><span class="eyebrow">FootyBox diary</span><h2 style="margin-top:8px;">Log / Review</h2><p class="muted" data-log-match-title>Selected match</p></div>
+        <button class="btn btn-ghost btn-sm" type="button" data-close-log>Close</button>
+      </div>
+      <div class="divider"></div>
+      <div class="form-grid two">
+        <div class="field"><label for="log-date">Watched date</label><input class="input" id="log-date" name="watchedAt" type="date" required></div>
+        <div class="field"><label>Your rating</label><span class="rate-input" data-value="0"></span></div>
+      </div>
+      <div class="field"><label for="log-review">Your review</label><textarea class="textarea" id="log-review" name="reviewText" maxlength="4000" placeholder="What made this match memorable?"></textarea></div>
+      <div class="form-grid two">
+        <div class="field"><label for="log-potm">Player of the Match</label><input class="input" id="log-potm" name="playerOfMatchName" maxlength="160" placeholder="Player name"></div>
+        <div class="compose-toggles">
+          <label class="auth-check"><input type="checkbox" name="seenInStadium"> I was at the stadium</label>
+          <label class="auth-check"><input type="checkbox" name="containsSpoilers"> Review contains spoilers</label>
+        </div>
+      </div>
+      <p class="auth-message" data-log-message aria-live="polite"></p>
+      <div class="row center" style="justify-content:flex-end;gap:10px;"><button class="btn btn-ghost hidden" type="button" data-delete-log>Delete entry</button><button class="btn btn-ghost" type="button" data-close-log>Cancel</button><button class="btn btn-primary" type="submit" data-log-submit>Save diary entry</button></div>
+    </form>
+  </dialog>
+
+  <script src="/assets/js/ui.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

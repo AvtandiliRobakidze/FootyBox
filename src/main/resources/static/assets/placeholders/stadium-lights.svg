@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Night stadium lights placeholder</title>
+  <desc id="desc">An original abstract football stadium at night for local fallback artwork.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="24%" r="58%">
+      <stop offset="0" stop-color="#315f46" stop-opacity=".72"/>
+      <stop offset=".44" stop-color="#10251a" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#050807"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#d7b665" stop-opacity=".1"/>
+      <stop offset=".5" stop-color="#d7b665" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#d7b665" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="#050807"/>
+  <rect width="1200" height="720" fill="url(#glow)"/>
+  <path d="M98 246c140-78 864-78 1004 0" fill="none" stroke="#d7e5d7" stroke-opacity=".18" stroke-width="3"/>
+  <path d="M126 266c128-58 820-58 948 0" fill="none" stroke="#7fbf96" stroke-opacity=".14" stroke-width="2"/>
+  <g fill="#eff7ef" opacity=".68">
+    <circle cx="272" cy="198" r="5"/><circle cx="314" cy="185" r="5"/><circle cx="356" cy="176" r="5"/>
+    <circle cx="844" cy="176" r="5"/><circle cx="886" cy="185" r="5"/><circle cx="928" cy="198" r="5"/>
+  </g>
+  <path d="M0 490h1200v230H0z" fill="#07110c" opacity=".9"/>
+  <path d="M342 720 493 512h214l151 208" fill="none" stroke="#5e856a" stroke-opacity=".28" stroke-width="3"/>
+  <path d="M493 512h214M600 512v208" fill="none" stroke="#91b596" stroke-opacity=".18" stroke-width="2"/>
+  <ellipse cx="600" cy="618" rx="78" ry="34" fill="none" stroke="#91b596" stroke-opacity=".18" stroke-width="2"/>
+  <rect y="0" width="1200" height="720" fill="url(#gold)" opacity=".26"/>
+</svg>

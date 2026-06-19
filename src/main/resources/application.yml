@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: footybox
+  datasource:
+    url: ${FOOTYBOX_DB_URL:jdbc:postgresql://127.0.0.1:5433/footybox}
+    username: ${FOOTYBOX_DB_USERNAME:footybox}
+    password: ${FOOTYBOX_DB_PASSWORD:footybox}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+  thymeleaf:
+    check-template-location: false
+  docker:
+    compose:
+      enabled: ${FOOTYBOX_DOCKER_COMPOSE_ENABLED:false}
+
+server:
+  port: ${PORT:8080}
+
+footybox:
+  jwt:
+    secret: ${FOOTYBOX_JWT_SECRET:dev-footybox-secret-key-change-me-please-32}
+    expiration-minutes: ${FOOTYBOX_JWT_EXPIRATION_MINUTES:1440}
+  football-data:
+    base-url: ${FOOTBALL_DATA_BASE_URL:https://api.football-data.org/v4}
+    token: ${FOOTBALL_DATA_TOKEN:}
+    rate-limit-delay-ms: ${FOOTBALL_DATA_RATE_LIMIT_DELAY_MS:6500}
+  import:
+    enabled: ${FOOTBALL_IMPORT_ENABLED:false}
+    competition-codes: ${FOOTBALL_IMPORT_COMPETITION_CODES:WC,CL,BL1,DED,BSA,PD,FL1,ELC,PPL,EC,SA,PL}
+    from-year: ${FOOTBALL_IMPORT_FROM_YEAR:2010}
+    to-year: ${FOOTBALL_IMPORT_TO_YEAR:2025}
+    exit-after-run: ${FOOTBALL_IMPORT_EXIT_AFTER_RUN:false}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

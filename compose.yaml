@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: 'postgres:16-alpine'
+    environment:
+      - 'POSTGRES_DB=footybox'
+      - 'POSTGRES_PASSWORD=footybox'
+      - 'POSTGRES_USER=footybox'
+    ports:
+      - '5433:5432'
+    volumes:
+      - footybox-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  footybox-postgres-data:

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Cinematic match poster placeholder</title>
+  <desc id="desc">An original abstract match poster fallback for FootyBox cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0b1510"/>
+      <stop offset=".5" stop-color="#1a241b"/>
+      <stop offset="1" stop-color="#050807"/>
+    </linearGradient>
+    <radialGradient id="beam" cx="45%" cy="0" r="74%">
+      <stop stop-color="#e1c36a" stop-opacity=".4"/>
+      <stop offset=".5" stop-color="#1fbf72" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#050807" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="520" fill="url(#bg)"/>
+  <rect width="720" height="520" fill="url(#beam)"/>
+  <path d="M52 352h616" stroke="#e8efe8" stroke-opacity=".12"/>
+  <path d="M142 520 264 330h192l122 190" fill="none" stroke="#7fa287" stroke-opacity=".32" stroke-width="3"/>
+  <path d="M264 330h192M360 330v190" fill="none" stroke="#7fa287" stroke-opacity=".18" stroke-width="2"/>
+  <ellipse cx="360" cy="430" rx="58" ry="25" fill="none" stroke="#7fa287" stroke-opacity=".2" stroke-width="2"/>
+  <g fill="#edf5ed" opacity=".72">
+    <circle cx="228" cy="122" r="5"/><circle cx="256" cy="116" r="5"/><circle cx="284" cy="112" r="5"/>
+    <circle cx="436" cy="112" r="5"/><circle cx="464" cy="116" r="5"/><circle cx="492" cy="122" r="5"/>
+  </g>
+</svg>

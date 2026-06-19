@@ -1,0 +1,69 @@
+:root {
+  color-scheme: dark;
+
+  --color-bg: #14181d;
+  --color-bg-subtle: #171d23;
+  --color-surface: #202731;
+  --color-surface-raised: #252e38;
+  --color-surface-hover: #2b3541;
+  --color-field: #1b222b;
+  --color-border: #303a46;
+  --color-border-strong: #485463;
+  --color-text: #f4f6f8;
+  --color-text-muted: #a7b0bb;
+  --color-text-faint: #75808d;
+  --color-primary: #41d07a;
+  --color-primary-hover: #58e08c;
+  --color-primary-ink: #07140e;
+  --color-gold: #f5b73c;
+  --color-danger: #ef6461;
+  --color-info: #44b8f0;
+  --color-focus: #ffcf73;
+
+  --ink: var(--color-text);
+  --muted: var(--color-text-muted);
+  --line: var(--color-border);
+  --field: var(--color-field);
+  --surface: var(--color-surface);
+  --grass: var(--color-primary);
+  --grass-strong: var(--color-primary-hover);
+  --gold: var(--color-gold);
+  --danger: var(--color-danger);
+
+  --font-display: "Bricolage Grotesque", "Inter Tight", Inter, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-body: Inter, "Segoe UI", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-hero: 4.05rem;
+  --text-section: 2rem;
+  --text-card-title: 1.22rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 18px;
+  --radius-pill: 999px;
+  --shadow-raised: 0 18px 44px rgb(0 0 0 / 28%);
+  --shadow-soft: 0 8px 24px rgb(0 0 0 / 24%);
+  --shell-width: 1240px;
+  --header-height: 68px;
+  --transition-fast: 150ms ease;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --text-hero: 2.2rem;
+    --text-section: 1.55rem;
+    --text-card-title: 1.1rem;
+  }
+}

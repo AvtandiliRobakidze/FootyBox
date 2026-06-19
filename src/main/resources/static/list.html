@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lists — FootyBox</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" type="image/png" href="assets/img/footybox-logo.png">
+</head>
+<body data-nav="lists">
+
+<main class="wrap page">
+  <div class="notice">Sample list detail. List persistence and community interaction APIs are not implemented yet.</div>
+
+  <div class="reveal in" style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+    <div>
+      <span class="eyebrow">Collections</span>
+      <h1 style="font-size:clamp(28px,4vw,44px);margin-top:12px;">Football lists worth saving.</h1>
+      <p class="lead" style="margin-top:12px;max-width:56ch;">Curated, shareable and collectible. Build your own canon of unmissable matches and follow the ones that move you.</p>
+    </div>
+    <a href="/archive.html" class="btn btn-primary btn-lg" data-icon="plus">Create a list</a>
+  </div>
+
+  <!-- featured big list -->
+  <section class="section" style="margin-top:34px;">
+    <a href="#" class="card reveal" style="display:grid;grid-template-columns:1.3fr 1fr;overflow:hidden;">
+      <div style="position:relative;min-height:320px;">
+        <img src="/assets/placeholders/stadium-lights.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(11,15,14,0.9));"></div>
+      </div>
+      <div style="padding:34px;display:flex;flex-direction:column;justify-content:center;">
+        <span class="chip green" data-icon="trophy" style="align-self:flex-start;">Editor's collection</span>
+        <h2 style="font-size:30px;margin-top:14px;">Games Every Football Fan Should Watch</h2>
+        <p class="soft" style="margin-top:12px;">50 matches that explain why this sport owns our hearts — finals, comebacks, derbies and the impossible. Spoiler-free safe to browse.</p>
+        <div class="row center" style="gap:14px;margin-top:18px;">
+          <img class="avatar" src="/assets/placeholders/match-poster.webp">
+          <span class="muted" style="font-size:13px;">FootyBox editorial · 50 matches</span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- filters -->
+  <div class="section" style="margin-top:32px;">
+    <div class="chip-row">
+      <button class="filter-chip active">Popular</button>
+      <button class="filter-chip">Newest</button>
+      <button class="filter-chip">Champions League</button>
+      <button class="filter-chip">World Cup</button>
+      <button class="filter-chip">Derbies</button>
+      <button class="filter-chip">Underrated</button>
+      <button class="filter-chip">Emotional</button>
+    </div>
+  </div>
+
+  <!-- grid -->
+  <section class="section" style="margin-top:24px;">
+    <div class="grid grid-3">
+
+      <a href="#" class="card list-card reveal">
+        <div class="covers"><img src="/assets/placeholders/archive-wall.webp"><img src="/assets/placeholders/stadium-lights.webp"><img src="/assets/placeholders/match-poster.webp"><img src="/assets/placeholders/archive-wall.webp"></div>
+        <div class="lc-body"><div class="lc-title">Best Champions League Nights</div><p class="muted" style="font-size:12.5px;margin-top:8px;">The European nights that stopped time.</p><div class="lc-meta"><span>40 matches</span></div></div>
+      </a>
+
+      <a href="#" class="card list-card reveal">
+        <div class="covers"><img src="/assets/placeholders/stadium-lights.webp"><img src="/assets/placeholders/match-poster.webp"><img src="/assets/placeholders/archive-wall.webp"><img src="/assets/placeholders/stadium-lights.webp"></div>
+        <div class="lc-body"><div class="lc-title">Matches That Broke Me</div><p class="muted" style="font-size:12.5px;margin-top:8px;">14 nights of pure, beautiful pain.</p><div class="lc-meta"><span>14 matches</span></div></div>
+      </a>
+
+      <a href="#" class="card list-card reveal">
+        <div class="covers"><img src="/assets/placeholders/match-poster.webp"><img src="/assets/placeholders/archive-wall.webp"><img src="/assets/placeholders/stadium-lights.webp"><img src="/assets/placeholders/match-poster.webp"></div>
+        <div class="lc-body"><div class="lc-title">Memorable World Cup Games</div><p class="muted" style="font-size:12.5px;margin-top:8px;">Summers that united the planet.</p><div class="lc-meta"><span>28 matches</span></div></div>
+      </a>
+
+      <a href="#" class="card list-card reveal">
+        <div class="covers"><img src="/assets/placeholders/archive-wall.webp"><img src="/assets/placeholders/stadium-lights.webp"><img src="/assets/placeholders/match-poster.webp"><img src="/assets/placeholders/archive-wall.webp"></div>
+        <div class="lc-body"><div class="lc-title">Underrated Derbies</div><p class="muted" style="font-size:12.5px;margin-top:8px;">The rivalries the algorithm forgot.</p><div class="lc-meta"><span>16 matches</span></div></div>
+      </a>
+
+      <a href="#" class="card list-card reveal">
+        <div class="covers"><img src="/assets/placeholders/stadium-lights.webp"><img src="/assets/placeholders/match-poster.webp"><img src="/assets/placeholders/archive-wall.webp"><img src="/assets/placeholders/stadium-lights.webp"></div>
+        <div class="lc-body"><div class="lc-title">90th-Minute Heartbreak</div><p class="muted" style="font-size:12.5px;margin-top:8px;">Won and lost in stoppage time.</p><div class="lc-meta"><span>20 matches</span></div></div>
+      </a>
+
+      <a href="#" class="card list-card reveal">
+        <div class="covers"><img src="/assets/placeholders/match-poster.webp"><img src="/assets/placeholders/archive-wall.webp"><img src="/assets/placeholders/stadium-lights.webp"><img src="/assets/placeholders/match-poster.webp"></div>
+        <div class="lc-body"><div class="lc-title">South American Cauldrons</div><p class="muted" style="font-size:12.5px;margin-top:8px;">Atmosphere you can feel through a screen.</p><div class="lc-meta"><span>18 matches</span></div></div>
+      </a>
+
+    </div>
+
+    <div class="center-text" style="margin-top:34px;"><button class="btn btn-ghost btn-lg">Load more lists</button></div>
+  </section>
+</main>
+
+<script src="assets/js/ui.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive - FootyBox</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="icon" type="image/png" href="/assets/img/footybox-logo.png">
+</head>
+<body data-nav="archive">
+  <main class="wrap page">
+    <div class="reveal in" style="margin-bottom:22px;">
+      <span class="eyebrow">The FootyBox archive</span>
+      <h1 style="font-size:clamp(28px,4vw,42px);margin-top:12px;">Search every match, team, player and competition.</h1>
+    </div>
+
+    <form class="archive-search reveal in" data-search-form>
+      <span data-icon="search"></span>
+      <input type="search" data-match-query placeholder="Search teams, competitions or matchups..." autocomplete="off">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    <div class="chip-row" style="margin-top:14px;">
+      <span class="muted" style="font-size:12.5px;align-self:center;">Try:</span>
+      <a class="chip" href="/archive.html?q=Real%20Madrid">Real Madrid</a>
+      <a class="chip" href="/archive.html?q=World%20Cup">World Cup finals</a>
+      <a class="chip" href="/archive.html?q=Liverpool">Liverpool</a>
+      <a class="chip" href="/archive.html?q=Champions%20League">Champions League</a>
+    </div>
+
+    <a class="archive-wc-spotlight reveal in" href="/archive.html?competition=WC" aria-label="Browse FIFA World Cup 2026 fixtures">
+      <img src="/assets/editorial/world-cup-supporters.webp" alt="Football supporters celebrating together in a packed stadium" loading="eager">
+      <span class="archive-wc-copy">
+        <span class="eyebrow">Happening now · World Cup 2026</span>
+        <strong>Follow every fixture through the archive.</strong>
+        <small>Played matches, upcoming games and knockout fixtures.</small>
+      </span>
+      <span class="btn btn-primary btn-sm">Browse World Cup</span>
+    </a>
+
+    <section class="competition-browser reveal in" aria-labelledby="competition-browser-title">
+      <div class="row center" style="justify-content:space-between;gap:16px;flex-wrap:wrap;">
+        <div><h2 id="competition-browser-title">Choose your tournament</h2></div>
+        <span class="muted" data-competition-status>Loading competitions…</span>
+      </div>
+      <div class="competition-strip" data-competition-list aria-live="polite"></div>
+    </section>
+
+    <p class="notice hidden" data-page-message aria-live="polite"></p>
+    <input data-spoiler-free type="checkbox" hidden>
+
+    <div class="archive-layout section" style="margin-top:34px;">
+      <aside class="card filter-panel reveal in">
+        <h4>Year</h4>
+        <select class="selectbox" data-archive-decade>
+          <option value="">All years</option>
+          <option value="2020">2020s</option>
+        </select>
+        <h4>Competition</h4>
+        <select class="selectbox" data-archive-competition aria-label="Filter by competition">
+          <option value="">All competitions</option>
+        </select>
+        <h4>Sort</h4>
+        <select class="selectbox" data-archive-sort>
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+        <div class="divider"></div>
+      </aside>
+
+      <section>
+        <div class="row center" style="justify-content:space-between;margin-bottom:18px;">
+          <span class="muted" data-archive-count>Loading archive...</span>
+        </div>
+        <div class="result-group reveal in">
+          <div class="rg-head"><h3>Matches</h3></div>
+          <div class="grid grid-3" data-match-list aria-live="polite"></div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+  <script src="/assets/js/ui.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
